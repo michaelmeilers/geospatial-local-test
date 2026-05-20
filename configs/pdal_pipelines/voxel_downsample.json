@@ -1,0 +1,17 @@
+{
+  "pipeline": [
+    {
+      "type": "readers.las",
+      "filename": "input.las"
+    },
+    {
+      "type": "filters.voxelcenternearestneighbor",
+      "cell": 0.1
+    },
+    {
+      "type": "writers.las",
+      "filename": "output.las",
+      "compression": true
+    }
+  ]
+}
